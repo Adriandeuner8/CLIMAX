@@ -127,7 +127,7 @@ let map;
 // Api de Notias NEWSAPI
 const buscaNoticia = (localidade) => {
     
-    const apiNoticiasUrl = 'http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=4&de=05-12-2023';
+    const apiNoticiasUrl = 'https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=4&de=05-12-2023';
 
     fetch(apiNoticiasUrl)
         .then((res) => res.json())

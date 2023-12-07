@@ -1,0 +1,183 @@
+/* Toda a pagina */
+* {
+        margin: 0;
+        padding: 0;
+        font-family: 'Playfair Display', serif; 
+        
+}
+.nav-bar{
+        width: auto;
+        height: 70px;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(69,160,73,1) 25%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: #edfdee;
+
+}
+
+/* CEP */
+.cep {
+        max-width: 350px;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #fff;
+        margin-bottom: 20px;
+} 
+.input-cep {
+        margin-top: 15px;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
+    
+.button-cep {
+        margin: 10px;
+        font-size: 16px;
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}    
+.button-cep:hover {
+        background-color: #45a049;
+}
+
+/* ENDERECO */
+#endereco{
+        max-width: 350px;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        display: none;
+}
+    
+/* CORPO COM CLIMA/MAP/NOTICIA */
+#main{
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        display: none;
+       
+} 
+.temp{
+        height: 400px;
+        width: 400px;
+        display: inline-block;
+        vertical-align: top;
+        margin:10px auto;
+        line-height: 50px;
+        font-size: 16px;
+}
+.map {
+        height: 400px;
+        width: 400px;
+}
+
+/*CORPO NOTICIA */
+.noticia{
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        display: none;
+        
+}
+h6 {
+        
+  color:rgb(91, 91, 91);      
+}
+
+.noticia-item {
+        max-width: calc(85% - 10px); 
+        box-sizing: border-box;
+        margin-bottom: 20px; 
+        padding: 10px;
+        list-style: none;  
+        
+}
+strong {
+        font-weight: 800;
+        color: #45a049;
+}
+
+/* MEDIA CELULAR */
+@media (max-width: 481px) {
+        /* CEP - ENDERECO */
+        .cep {
+                max-width: 300px;
+                margin: 30px auto;
+                padding: 20px;
+        }
+        .input-cep {
+                margin-top: 10px;
+                font-size: 14px;
+                padding: 10px;
+        }
+        .button-cep {
+                font-size: 14px;
+                padding: 10px 10px;
+        }
+        #endereco{
+                max-width: 300px;
+                margin: 10px auto;
+                font-size: 14px;
+                margin-bottom: 5px;
+        }
+        /* main MAP - CLIMA */
+        #main{
+                max-width: 350px;
+                height: 220px;
+                margin: 30px auto;
+                padding: 10px;
+                margin-bottom: 10px;
+        }
+        .temp{
+                height: 200px;
+                width: 150px;
+                margin:5px auto;
+                line-height: 20px;
+                font-size: 12px;
+        }
+        .map {
+                height: 220px;
+                width: 200px;
+        } 
+        /* NOTICIA */
+        .noticia{
+                max-width: 350px;
+                margin: 30px auto;
+                padding: 10px;
+                margin-bottom: 20px;
+        }
+        .noticia-item {
+                max-width: calc(85% - 10px); 
+                margin-bottom: 20px; 
+                padding: 5px; 
+        }
+      
+      }
